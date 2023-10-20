@@ -68,11 +68,11 @@ const OrderDetails = ({ cart, subTotal, isGettingCart, onCheckout }) => {
                 </Text>
                 <Group position="apart">
                   <Group position="apart">
-                    <Text fz="sm">{item.pizza.price}DA</Text>
+                    <Text fz="sm">{item.pizza.price}Rs</Text>
                     <Text fz="sm">x{item.quantity}</Text>
                   </Group>
                   <Text fz="sm" fw={700}>
-                    {item.subTotal}DA
+                    {item.subTotal}Rs
                   </Text>
                 </Group>
               </div>
@@ -83,7 +83,7 @@ const OrderDetails = ({ cart, subTotal, isGettingCart, onCheckout }) => {
           <Group my={10} position="apart">
             <Text>Subtotal</Text>
             <Text fz="sm" fw={700}>
-              DA{subTotal}
+              Rs{subTotal}
             </Text>
           </Group>
         )}
@@ -91,7 +91,7 @@ const OrderDetails = ({ cart, subTotal, isGettingCart, onCheckout }) => {
           <Group my={10} position="apart">
             <Text>Shipping</Text>
             <Text fz="sm" fw={700}>
-              {cart.shipping === 0 ? "Free" : `${cart.shipping}DA`}
+              {cart.shipping === 0 ? "Free" : `${cart.shipping}Rs`}
             </Text>
           </Group>
         )}
@@ -99,15 +99,15 @@ const OrderDetails = ({ cart, subTotal, isGettingCart, onCheckout }) => {
           <Text>Discount</Text>
           <Text fz="sm" fw={700}>
             {cart?.discountedPrice === 0
-              ? "- DA0"
-              : `- DA${cart?.discountedPrice}`}
+              ? "- Rs0"
+              : `- Rs${cart?.discountedPrice}`}
           </Text>
         </Group>
         {!isGettingCart && cart && Object?.entries(cart)?.length > 0 && (
           <Group my={10} position="apart">
             <Text>Total Cost</Text>
             <Text fz="sm" fw={700}>
-              {cart.totalToPay}DA
+              {cart.totalToPay}Rs
             </Text>
           </Group>
         )}

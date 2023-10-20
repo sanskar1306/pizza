@@ -59,21 +59,21 @@ const OrderSummary = ({ subTotal, cart }) => {
         <Group position="apart">
           <Text>Subtotal</Text>
           <Text fz="sm" fw={700}>
-            {subTotal}DA
+            {subTotal}Rs
           </Text>
         </Group>
         <Group position="apart">
           <Text>Shipping</Text>
           <Text fz="sm" fw={700}>
-            {cart.shipping === 0 ? "Free" : `${cart.shipping}DA`}
+            {cart.shipping === 0 ? "Free" : `${cart.shipping}Rs`}
           </Text>
         </Group>
         <Group position="apart">
           <Text>Discount</Text>
           <Text fz="sm" fw={700}>
             {cart?.discountedPrice === 0
-              ? "- 0DA"
-              : `- ${cart?.discountedPrice}DA`}
+              ? "- 0Rs"
+              : `- ${cart?.discountedPrice}Rs`}
           </Text>
         </Group>
         <form onSubmit={form.onSubmit(handleSubmit)}>
@@ -108,7 +108,7 @@ const OrderSummary = ({ subTotal, cart }) => {
         <Group sx={{ margin: "1rem 0" }} position="apart">
           <Text>Total To Pay</Text>
           <Text fz="sm" fw={700}>
-            {cart.totalToPay}DA
+            {cart.totalToPay}Rs
           </Text>
         </Group>
         <Link

@@ -89,9 +89,9 @@ const MainHeader = ({ onToggleColorScheme }) => {
         <Group position="apart" sx={{ height: "100%" }}>
           <Link to="/">
             <Image
-              width={60}
-              height={60}
-              src="https://res.cloudinary.com/djuxwysbl/image/upload/v1677691074/PizzaDelivery/Pizza-WebApp-Logo_snyruy.png"
+              width={55}
+              height={55}
+              src="https://seeklogo.com/images/M/Mr__Pizza-logo-5FEF30AA1C-seeklogo.com.png"
             />
           </Link>
           <Group>

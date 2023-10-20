@@ -50,7 +50,10 @@ export const register = createAsyncThunk(
   "auth/register",
   async (values, { rejectWithValue }) => {
     try {
+      console.log(values)
+      values.loginType = "local"
       const { data } = await axios.post("/auth/register", values);
+      console.log(data)
       return data;
     } catch (err) {
       return rejectWithValue(err.response.data);

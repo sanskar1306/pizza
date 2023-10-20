@@ -45,6 +45,7 @@ const UserSchema = new mongoose.Schema(
     loginType: {
       type: String,
       enum: ["local", "google", "facebook"],
+      default : "local",
       required: true,
     },
     providers: {

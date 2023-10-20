@@ -4,7 +4,7 @@ import axios from "../../utils/axios";
 const initialState = {
   pizzas: [],
   filters: {
-    price: [200, 4000],
+    price: [50, 1000],
     search: "",
   },
   loading: false,

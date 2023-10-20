@@ -56,10 +56,10 @@ const FiltersBar = ({ filters }) => {
             sx={{
               flex: 1,
             }}
-            min={200}
-            max={4000}
-            step={10}
-            label={(value) => `${value}DA`}
+            min={50}
+            max={1000}
+            step={50}
+            label={(value) => `${value}Rs`}
             value={price}
             onChange={(value) => setPrice(value)}
           />

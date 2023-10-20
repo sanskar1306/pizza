@@ -126,7 +126,7 @@ const PizzaItem = ({
               })}
               mt="xs"
             >
-              {price}DA
+              {price}Rs
             </Text>
           </Group>
           <Text
