@@ -67,22 +67,22 @@ const OrderDetailsModal = ({ order, subTotal }) => {
       <Group my={10} position="apart">
         <Text>Shipping</Text>
         <Text fz="sm" fw={700}>
-          {order?.cart?.shipping === 0 ? "Free" : `${order?.cart?.shipping}DA`}
+          {order?.cart?.shipping === 0 ? "Free" : `${order?.cart?.shipping}Rs`}
         </Text>
       </Group>
       <Group my={10} position="apart">
         <Text>Discount</Text>
         <Text fz="sm" fw={700}>
           {order?.cart?.discountedPrice === 0
-            ? "- DA0"
-            : `- DA${order?.cart?.discountedPrice}`}
+            ? "- Rs0"
+            : `- Rs${order?.cart?.discountedPrice}`}
         </Text>
       </Group>
 
       <Group my={10} position="apart">
         <Text>Total Cost</Text>
         <Text fz="sm" fw={700}>
-          {order?.cart?.totalToPay}DA
+          {order?.cart?.totalToPay}Rs
         </Text>
       </Group>
     </Paper>

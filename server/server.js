@@ -32,7 +32,7 @@ app.use(
   session({
     resave: false,
     saveUninitialized: false,
-    secret: "PizzaDelivery Created By ME | Ilyas Belfar!",
+    secret: "PizzaDelivery Created By ME",
   })
 );
 app.use(cookieParser());

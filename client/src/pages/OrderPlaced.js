@@ -8,7 +8,7 @@ import {
   Button,
 } from "@mantine/core";
 import { Link, Navigate } from "react-router-dom";
-import Lottie from "react-lottie";
+// import Lottie from "react-lottie";
 import animationData from "../assets/lotties/thank-you-buddy.json";
 import { useDispatch, useSelector } from "react-redux";
 import { useEffect, useMemo } from "react";
@@ -47,18 +47,6 @@ const OrderPlaced = () => {
           p="lg"
           withBorder
         >
-          <Lottie
-            options={{
-              loop: true,
-              autoplay: true,
-              animationData: animationData,
-            }}
-            width={250}
-            height={250}
-            style={{
-              marginTop: 16,
-            }}
-          />
           <Stack align="center">
             <Title my="md">Thank you for the purchase!</Title>
             <Text mb="md">

@@ -94,7 +94,7 @@ const CartItem = ({ cart, item }) => {
         </Group>
       </td>
       <td>
-        <Text>{item.pizza.price}DA</Text>
+        <Text>{item.pizza.price}Rs</Text>
       </td>
       <td>
         <Group position="center">
@@ -149,7 +149,7 @@ const CartItem = ({ cart, item }) => {
         </Group>
       </td>
       <td>
-        <Text>{item.subTotal}DA</Text>
+        <Text>{item.subTotal}Rs</Text>
       </td>
       <td>
         <ActionIcon

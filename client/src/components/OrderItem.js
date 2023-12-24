@@ -41,7 +41,7 @@ const OrderItem = ({ order }) => {
       <td>
         {order?.cart?.totalToPay?.toLocaleString("en-US", {
           style: "currency",
-          currency: "DZD",
+          currency: "INR",
         })}
       </td>
       <td>{order?.status}</td>

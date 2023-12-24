@@ -6,6 +6,10 @@ const checkAuth = require("../middlewares/checkAuth");
 const authController = require("../controllers/authController");
 const e = require("express");
 
+router.get("/hello",(req,res)=>{
+  res.send("Hello world")
+})
+
 router.get("/auth/google", checkAuth, (req, res) => {
   passport.authenticate("google", {
     session: false,
