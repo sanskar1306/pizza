@@ -6,7 +6,7 @@
 .idea
 # testing
 /coverage
-
+../.docker-compose.yaml
 # production
 /build
 
